@@ -10,66 +10,66 @@ import Airdrop from './icons/Airdrop';
 const Navbar: React.FC = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#032016] pb-[33px] pt-[16px] flex h-[108px] justify-center items-center">
-      <div className="flex flex-row items-center justify-between w-11/12"> {/* 80% width, centered */}
+      <div className="flex flex-row items-center justify-between w-11/12">
         
         <NavLink
           to="/" 
           end
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
           <Home size={32} />
-          <p className="text-xs mt-1">Start</p>
+          <p className="text-sm mt-1">Start</p> {/* Changed to text-sm for 14px */}
         </NavLink>
         
         <div className="border-l border-gray-500 h-[54px] mx-2 sm:mx-3 md:mx-4"></div>
 
         <NavLink
           to="/earn"
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             `relative flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
           <Coin size={32} />
           <span className="absolute top-[-2px] right-[-2px] bg-blue-500 text-xs rounded-full w-5 h-5 flex items-center justify-center text-[#ffffff]">2</span>
-          <p className="text-xs mt-1">Earn</p>
+          <p className="text-sm mt-1">Earn</p> {/* Changed to text-sm for 14px */}
         </NavLink>
 
         <div className="border-l border-gray-500 h-[54px] mx-2 sm:mx-3 md:mx-4"></div>
 
         <NavLink
           to="/bet"
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
           <Bet size={32} />
-          <p className="text-xs mt-1">Bet</p>
+          <p className="text-sm mt-1">Bet</p> {/* Changed to text-sm for 14px */}
         </NavLink>
 
         <div className="border-l border-gray-500 h-[54px] mx-2 sm:mx-3 md:mx-4"></div>
 
         <NavLink
           to="/friends"
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
           <Friend size={32} />
-          <p className="text-xs mt-1">Friends</p>
+          <p className="text-sm mt-1">Friends</p> {/* Changed to text-sm for 14px */}
         </NavLink>
 
         <div className="border-l border-gray-500 h-[54px] mx-2 sm:mx-3 md:mx-4"></div>
 
         <NavLink
           to="/airdrop"
-          className={({ isActive }) =>
+          className={({ isActive }: { isActive: boolean }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
           <Airdrop size={32} />
-          <p className="text-xs mt-1">Airdrop</p>
+          <p className="text-sm mt-1">Airdrop</p> {/* Changed to text-sm for 14px */}
         </NavLink>
 
       </div>

@@ -1,7 +1,7 @@
 // StartPage.tsx
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import Awright from '/Users/wada/Documents/py/SOC-Demo/src/icons/Awright.tsx';
+import Awright from './icons/Awright';
 import './StartPage.css';
 
 const data = [
