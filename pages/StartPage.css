@@ -231,8 +231,8 @@ button {
 }
 
 .slider::-moz-range-thumb {
-  width: 160px;
-  height: 160px;
+  width: 16px;
+  height: 16px;
   background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
