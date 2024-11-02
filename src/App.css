@@ -6,3 +6,19 @@
 .icon-wrapper svg {
   fill: currentColor;
 }
+/* App.css */
+
+/* Ensure the app container takes full height */
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make the content scrollable */
+.content-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 108px; /* Space for the navbar */
+}

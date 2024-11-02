@@ -13,8 +13,8 @@ import Airdrop from './pages/Airdrop';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="bg-[#121212] flex flex-col justify-center items-center h-screen relative background">
-        <div className="w-full text-white flex flex-col max-w-xl items-center justify-center flex-grow">
+      <div className="app-container bg-[#121212] flex flex-col items-center min-h-screen background">
+        <div className="content-container flex-grow overflow-y-auto w-full max-w-xl text-white">
           <Routes>
             <Route path="/" element={<Start />} />
             <Route path="/earn" element={<Earn />} />
@@ -24,6 +24,7 @@ const App: React.FC = () => {
           </Routes>
         </div>
         
+        {/* Navbar remains fixed at the bottom */}
         <Navbar />
       </div>
     </Router>
