@@ -7,4 +7,10 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  .background {
+    background-image: url('./images/background-app.png');
+    background-size: cover;
+    background-position: center;
+  }
+
 }
