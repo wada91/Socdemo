@@ -21,7 +21,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Add the types here */
+    "types": ["react", "react-dom", "react-router-dom", "recharts"]
   },
   "include": ["src"]
 }
