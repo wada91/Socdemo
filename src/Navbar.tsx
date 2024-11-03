@@ -7,10 +7,15 @@ import Bet from './icons/Bet';
 import Friend from './icons/Friend';
 import Airdrop from './icons/Airdrop';
 
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 const Navbar: React.FC = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#032016] pb-[33px] pt-[16px] flex justify-center items-center z-10">
-      <div className="flex flex-row items-center justify-between w-11/12 max-w-xl"> {/* Navbar centered and constrained */}
+    <div
+      className="fixed bottom-0 left-0 right-0 bg-[#032016] pt-[16px] flex justify-center items-center z-10"
+      style={{ paddingBottom: isIOS ? '33px' : '16px' }}
+    >
+      <div className="flex flex-row items-center justify-between w-11/12 max-w-xl">
         
         <NavLink to="/" end className={({ isActive }) =>
           `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
