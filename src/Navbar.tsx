@@ -6,7 +6,7 @@ import Coin from './icons/Coin';
 import Bet from './icons/Bet';
 import Friend from './icons/Friend';
 import Airdrop from './icons/Airdrop';
-import './Navbar.css'; // Import the CSS file
+
 
 const Navbar: React.FC = () => {
   return (
