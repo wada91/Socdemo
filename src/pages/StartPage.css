@@ -154,7 +154,6 @@ button {
   background: none;
   border: none;
   font-size: 24px;
-  color: #e0e0e0;
   cursor: pointer;
 }
 
@@ -216,8 +215,11 @@ button {
 .slider-container {
   margin-top: 24px;
   width: 100%;
-  margin-top: 48px;
-  margin-bottom: 48px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  
 }
 
 .slider {
@@ -263,8 +265,8 @@ button {
   gap: 8px;
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-top: 48px;
-  margin-bottom: 32px;
+  
+ 
 }
 
 /* Animations */

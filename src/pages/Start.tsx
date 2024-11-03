@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import Awright from './icons/Awright';
+import Close from './icons/Close';
 import './StartPage.css';
 
 const data = [
@@ -91,7 +92,7 @@ const StartPage: React.FC = () => {
       {isOverlayVisible && (
         <div className="overlay" onClick={toggleOverlay}>
           <div className="overlay-content" onClick={(e) => e.stopPropagation()}>
-            <button className="overlay-close" onClick={toggleOverlay}>&times;</button>
+            <button className="overlay-close" onClick={toggleOverlay}><Close size={32} /></button>
             <div className="overlay-icon">&#9889;</div>
             <h2>Boost your profit</h2>
             <p>Spend SocialCoin points to activate a 24-hour boost and earn points every hour, even while offline. The more you invest, the more you earn!</p>
