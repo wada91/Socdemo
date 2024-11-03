@@ -1,0 +1,23 @@
+/* Navbar.css */
+
+/* Base styles for navbar */
+.navbar-container {
+    padding-bottom: 16px; /* Default padding for Android and desktop */
+  }
+  
+  /* Apply larger padding for iOS using safe-area-inset-bottom */
+  @supports (padding: max(0px)) {
+    .navbar-container {
+      padding-bottom: env(safe-area-inset-bottom, 33px); /* Use iOS safe area inset if available */
+    }
+  }
+  
+  /* Adjust styles for known iOS screen sizes */
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+         only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+         only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .navbar-container {
+      padding-bottom: 33px; /* Force iOS padding for specific known screen sizes */
+    }
+  }
+  
