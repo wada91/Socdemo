@@ -1,8 +1,0 @@
-.stay-updated-btn:active {
-  background: #BFBFBF; /* Darker gray for pressed state */
-  transition: background 0.1s ease;
-}
-
-.icon-wrapper svg {
-  fill: currentColor;
-}
