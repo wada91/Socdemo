@@ -9,7 +9,7 @@ import Airdrop from './icons/Airdrop';
 
 const Navbar: React.FC = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#032016] pb-[16px] pt-[16px] flex h-[108px] justify-center items-center">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#032016] pb-[16px] pt-[16px] flex h-[92px] justify-center items-center">
       <div className="flex flex-row items-center justify-between w-11/12"> {/* 80% width, centered */}
         
         <NavLink
