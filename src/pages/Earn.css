@@ -1,0 +1,138 @@
+/* Earn.css */
+
+.earn-page {
+    padding: 16px;
+    color: white;
+  }
+  
+  .earn-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .earn-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .earn-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .earn-section {
+    margin-bottom: 24px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  /* Task Card Style with Background Blur */
+  .task-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+  }
+  
+  /* Background layer for blur effect */
+  .task-card-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 212, 212, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(17.5px);
+    z-index: 0;
+  }
+  
+  /* Content layer (above the background) */
+  .task-icon,
+  .aw-icon,
+  .task-content,
+  .task-action {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .task-card:hover .task-card-bg {
+    background: rgba(212, 212, 212, 0.2);
+  }
+  
+  .task-icon {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  
+  .youtube-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/YT.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .telegram-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/TG.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .twitter-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/XT.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .task-content {
+    flex-grow: 1;
+  }
+  
+  .task-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .task-reward {
+    font-size: 14px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .coin-icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/dollar-coin.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .task-action {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .task-action.completed {
+    color: #4ade80; /* Green color for completed */
+  }
+  
