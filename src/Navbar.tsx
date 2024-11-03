@@ -1,6 +1,6 @@
 // Navbar.tsx
 import React from 'react';
-import { NavLink, NavLinkProps } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Home from './icons/Home';
 import Coin from './icons/Coin';
 import Bet from './icons/Bet';
@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         <NavLink
           to="/" 
           end
-          className={({ isActive }: { isActive: boolean }) =>
+          className={({ isActive }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
 
         <NavLink
           to="/earn"
-          className={({ isActive }: { isActive: boolean }) =>
+          className={({ isActive }) =>
             `relative flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
 
         <NavLink
           to="/bet"
-          className={({ isActive }: { isActive: boolean }) =>
+          className={({ isActive }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
 
         <NavLink
           to="/friends"
-          className={({ isActive }: { isActive: boolean }) =>
+          className={({ isActive }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
 
         <NavLink
           to="/airdrop"
-          className={({ isActive }: { isActive: boolean }) =>
+          className={({ isActive }) =>
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
