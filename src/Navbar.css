@@ -1,0 +1,14 @@
+.fixed-bottom-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #032016;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
