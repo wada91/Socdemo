@@ -7,9 +7,7 @@ import './Bet.css';
 const Bet: React.FC = () => {
   const [isResultsView, setIsResultsView] = useState(false);
 
-  const toggleView = () => {
-    setIsResultsView(!isResultsView);
-  };
+ 
 
   return (
     <div className="bet-page">
