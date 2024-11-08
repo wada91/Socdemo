@@ -130,7 +130,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  z-index: 100;
+  z-index: 1000;
   animation: fadeIn 0.3s ease;
 }
 
