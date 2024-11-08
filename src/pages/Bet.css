@@ -1,0 +1,306 @@
+/* General Page Styles */
+.bet-page {
+    padding: 16px;
+    color: white;
+}
+
+.new-bet-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Switch Button Container */
+.switch-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 4px;
+}
+
+.switch-container-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 212, 212, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(17.5px);
+    z-index: 0;
+}
+ 
+
+.switch-button {
+    flex: 1;
+    padding: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.switch-button.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* Bet Card Styles */
+.bet-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bet-card, .result-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.bet-card-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 212, 212, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(17.5px);
+    z-index: 0;
+  
+}
+
+.bet-card-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #d0d0d0;
+}
+.countdown {
+
+ position: relative;
+ align-items: center;
+     gap: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+
+    width: 100%;
+    height: 1px;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #b0b0b0 ;
+   }
+
+.info-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    color: #d0d0d0;
+}
+
+.bet-date {
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: -0.2px;
+    color: #d0d0d0;
+   
+}
+
+.bet-title {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.bet-options {
+   
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0;
+}
+.choise {
+   width: 80%;
+  
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+
+.bet-options label {
+   
+    position: relative;
+    z-index: 1;
+    display: flex;
+    
+    gap: 8px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.divider-choise {
+
+    
+    height: 1px;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: rgba(176, 176, 176, 0.50);
+   }
+
+/* Remove default background and custom style */
+.bet-options input[type="radio"] {
+    width: 100%;
+    appearance: none; /* Remove default styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b0b0b0; /* Outline color */
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: transparent; /* Ensures no background */
+    margin-right: 16px;
+  }
+  
+  .bet-options input[type="radio"]:checked {
+    background-color: transparent; /* No background color */
+  }
+  
+  .bet-options input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff; /* Inner dot color when selected */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* Adjustments for bet-current alignment */
+
+
+.bet-current {
+    width: 100%;
+    margin-left:auto ;
+    margin-right: 0;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    display:flex;
+    gap: 4px;
+   align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    font-style: normal;
+  justify-content: flex-end;
+
+
+ align-self: stretch;
+} 
+
+.underline {
+   text-decoration: underline;
+} 
+
+.coin-img {
+    width: 16px;
+    height: 16px;
+    
+    background-image: url('./images/dollar-coin.png');
+    background-size: cover;
+    background-position: center;
+   
+  }
+
+/* Results Options */
+.result-options {
+    
+    display: flex;
+    padding: 16px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    z-index: 1;
+}
+
+.result-option {
+    display: flex;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+z-index: 1;
+}
+
+.result-option span {
+    font-size: 14px;
+}
+.result-style {
+    display: flex;
+    width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+}
+.result-label {
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 112.5% */
+}
+
+.result-bar {
+    width: 100%;
+    height: 8px;
+    
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.result-bar-fill {
+    height: 100%;
+    background-color: #1E90FF;
+    border-radius: 4px;
+}
