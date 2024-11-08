@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
             `flex flex-col items-center px-2 sm:px-4 md:px-5 ${isActive ? 'text-[#ffffff]' : 'text-[#b0b0b0]'}`
           }
         >
-          <Airdrop size={32} />
+          <div className="airdrop-image"></div>
           <p className="text-xs mt-1">Airdrop</p>
         </NavLink>
 

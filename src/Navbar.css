@@ -10,5 +10,15 @@
     height: 92px;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
+  }
+
+  .airdrop-image {
+    width: 32px;
+    height: 32px;
+    background-image: url('./images/Aird.png');
+    background-size: cover;
+    background-position: center;
+
+
   }
